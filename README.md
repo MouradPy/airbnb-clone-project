@@ -177,3 +177,28 @@ This ensures smooth communication between guests, hosts, and the platform.
 Guests can search properties based on location, price, and availability.  
 Filtering options allow users to narrow down results to match their preferences.  
 This improves the user experience and helps users find the right property quickly.
+# API Security
+
+## Authentication
+All users must log in to access protected endpoints.  
+This ensures that only authorized users can access sensitive data, such as booking information and personal details.
+
+## Authorization
+Different roles (guest, host, admin) have access to specific resources and actions.  
+This prevents users from performing actions they are not allowed to, protecting the integrity of the system.
+
+## Data Validation & Sanitization
+All input data is validated and sanitized before being processed or stored.  
+This prevents common attacks such as SQL injection or XSS, safeguarding the database and user information.
+
+## Rate Limiting
+API requests are limited to prevent abuse or DDoS attacks.  
+This ensures the service remains available and responsive for legitimate users.
+
+## Encryption
+Sensitive data, such as passwords and payment information, is encrypted both in transit (HTTPS) and at rest.  
+This protects user data from interception or unauthorized access.
+
+## Secure Payment Handling
+Payment data is processed through secure third-party gateways (e.g., Stripe).  
+This ensures financial information is protected and reduces liability for the platform.
