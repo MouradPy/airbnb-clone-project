@@ -202,3 +202,16 @@ This protects user data from interception or unauthorized access.
 ## Secure Payment Handling
 Payment data is processed through secure third-party gateways (e.g., Stripe).  
 This ensures financial information is protected and reduces liability for the platform.
+# CI/CD Pipeline
+
+Continuous Integration (CI) and Continuous Deployment (CD) pipelines automate the process of building, testing, and deploying code.  
+CI/CD ensures that new features or bug fixes are tested and deployed reliably, reducing errors and improving development efficiency.
+
+For this project, the CI/CD pipeline could include:
+
+- **GitHub Actions:** Automates testing and deployment whenever new code is pushed to the repository.  
+- **Docker:** Ensures consistent environments for development, testing, and production.  
+- **Automated Tests:** Run unit and integration tests to catch issues before deployment.  
+- **Deployment:** Automatically deploy successful builds to staging or production servers.
+
+Implementing CI/CD helps maintain high code quality, faster release cycles, and stable application performance.
