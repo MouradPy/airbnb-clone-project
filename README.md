@@ -21,6 +21,32 @@ A full-stack clone of Airbnb demonstrating modern web development practices...
 
 ## 🤝 Contributing
 [Contribution guidelines]
+# Technology Stack
+
+## Frontend
+- **React.js:** Used for building dynamic, responsive user interfaces and reusable components.
+- **Bootstrap / Tailwind CSS:** For styling and creating responsive layouts quickly.
+
+## Backend
+- **Node.js / Express.js:** Server-side framework to handle API requests, authentication, and business logic.
+- **Django (if used in project overview):** Alternative web framework for building RESTful APIs.
+
+## Database
+- **MongoDB / PostgreSQL:** Stores application data such as users, properties, bookings, and reviews.
+- **Mongoose (for MongoDB):** Provides an object modeling tool for easier interaction with MongoDB.
+
+## APIs & Integrations
+- **Stripe API:** Handles secure payments and transaction processing.
+- **GraphQL (if used):** Provides flexible, efficient queries to fetch and manipulate data.
+
+## DevOps / Deployment
+- **Docker:** Containerizes the application for consistent environments across development and production.
+- **GitHub Actions:** Automates testing and deployment through CI/CD pipelines.
+- **AWS / Cloud Services:** Hosts the application and database in the cloud.
+
+## Testing
+- **Jest / Mocha:** Automated testing frameworks for unit and integration tests.
+
 # Team Roles
 
 ## Backend Developer
