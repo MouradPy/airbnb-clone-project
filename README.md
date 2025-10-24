@@ -77,3 +77,68 @@ A full-stack clone of Airbnb demonstrating modern web development practices...
 - Identify, document, and track bugs
 - Ensure application reliability and performance
 - Conduct regression testing
+# Database Design
+
+The database for the Airbnb Clone project will have the following key entities:
+
+## Users
+**Fields:**
+- `id` (primary key)
+- `name`
+- `email`
+- `password_hash`
+- `role` (guest, host, admin)
+
+**Relationships:**  
+- A user can have multiple properties (if they are a host).  
+- A user can make multiple bookings.  
+- A user can leave multiple reviews.
+
+## Properties
+**Fields:**
+- `id` (primary key)
+- `title`
+- `description`
+- `price_per_night`
+- `host_id` (foreign key to Users)
+
+**Relationships:**  
+- A property belongs to a host (user).  
+- A property can have multiple bookings.  
+- A property can have multiple reviews.
+
+## Bookings
+**Fields:**
+- `id` (primary key)
+- `property_id` (foreign key)
+- `user_id` (foreign key)
+- `start_date`
+- `end_date`
+- `total_price`
+
+**Relationships:**  
+- A booking belongs to a property.  
+- A booking belongs to a user (guest).
+
+## Reviews
+**Fields:**
+- `id` (primary key)
+- `property_id` (foreign key)
+- `user_id` (foreign key)
+- `rating` (1-5)
+- `comment`
+
+**Relationships:**  
+- A review belongs to a property.  
+- A review belongs to a user.
+
+## Payments
+**Fields:**
+- `id` (primary key)
+- `booking_id` (foreign key)
+- `amount`
+- `payment_date`
+- `payment_status`
+
+**Relationships:**  
+- A payment belongs to a booking.
