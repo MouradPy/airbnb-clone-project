@@ -142,3 +142,38 @@ The database for the Airbnb Clone project will have the following key entities:
 
 **Relationships:**  
 - A payment belongs to a booking.
+# Feature Breakdown
+
+## User Management
+Users can sign up, log in, and manage their profiles.  
+Guests can book properties, while hosts can list and manage their properties.  
+Admins can manage users and monitor the platform.
+
+## Property Management
+Hosts can create, edit, and delete property listings.  
+Each property includes details such as title, description, price, images, and availability.  
+This allows the platform to maintain a catalog of properties for guests to browse.
+
+## Booking System
+Guests can search for available properties and make bookings for specific dates.  
+The system calculates the total cost and manages booking confirmation.  
+Bookings are linked to both users and properties for proper tracking.
+
+## Payment Integration
+Guests can pay securely through integrated payment gateways (e.g., Stripe).  
+Payments are linked to bookings to ensure proper accounting.  
+This feature ensures smooth transactions and financial tracking.
+
+## Reviews & Ratings
+Guests can leave reviews and ratings for properties they have stayed in.  
+Reviews help future guests make informed decisions and maintain quality on the platform.  
+Hosts can respond to reviews to improve guest satisfaction.
+
+## Notifications
+Users receive notifications for booking confirmations, reminders, and updates.  
+This ensures smooth communication between guests, hosts, and the platform.  
+
+## Search & Filtering
+Guests can search properties based on location, price, and availability.  
+Filtering options allow users to narrow down results to match their preferences.  
+This improves the user experience and helps users find the right property quickly.
